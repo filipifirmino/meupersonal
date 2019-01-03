@@ -16,3 +16,8 @@ Cadastro de usuarios (Clientes, Gestor, Equipe);
 <br>
 Geração de relatorio(Desempenho, Acesso, financeiro);
 <br>
+Vidéos auxiliares (Possibilidade de inserir pequenos moovies para orientar melhor o cliente)
+
+<br>
+<strong>Mercado</strong>
+<br>
