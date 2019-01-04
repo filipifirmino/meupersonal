@@ -20,10 +20,11 @@
     <div class="cont-login">
         <form  method="POST" action="asset/scripts/receber-dados.php">
     <div class="form-group">
-        <h3>Login do sistema</h3>
+        <h3>Meu Personal</h3>
         <input type="text" name="name-user" placeholder="login" required class="form-control">
         <input type="password" name="pass-user" placeholder="pass" required class="form-control">
-        <input type="submit" class="btn btn-success" value="Login">
+        <input type="submit" class="btn btn-success form-control" value="Login">
+        <a href="#" id="a">Cadastre-se!</a>
     </div>
         </form>
     </div>
