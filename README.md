@@ -1,4 +1,4 @@
-<strong>Ic3Web LTDA </strong>
+#Ic3Web LTDA 
 <br>
 Meu Personal, é um software de gestão de trreinamento
 para profissionais de educação física.
@@ -10,7 +10,7 @@ pratico e disponivel 24h/7/365.
 
 <Strong>Funcionalidas</strong>
 
-V-1.0
+##V-1.0
 <br>
 Cadastro de usuarios (Clientes, Gestor, Equipe);
 <br>
@@ -18,6 +18,13 @@ Geração de relatorio(Desempenho, Acesso, financeiro);
 <br>
 Vidéos auxiliares (Possibilidade de inserir pequenos moovies para orientar melhor o cliente)
 
-<br>
-<strong>Mercado</strong>
-<br>
+## Mercado
+[MIT](http://google.com.br)
+
+```python
+import foobar
+
+foobar.pluralize('word') # returns 'words'
+foobar.pluralize('goose') # returns 'geese'
+foobar.singularize('phenomena') # returns 'phenomenon'
+```
