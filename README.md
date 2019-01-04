@@ -1,30 +1,26 @@
-#Ic3Web LTDA 
-<br>
-Meu Personal, é um software de gestão de trreinamento
-para profissionais de educação física.
-Há também a possibilidade de escalonar seu uso para outras áreas
-que seutilizem de forularios de desempenho e acompanhamento.
-<br>
-A proposta do sistema é tornar o contato com o cliente simples
-pratico e disponivel 24h/7/365.
+# Meu Personal
 
-<Strong>Funcionalidas</strong>
+## Proposta
+Sistema de gerenciamento e acompanhamento, voltado para profissionais que 
+necessitam um feedbeck em tempo real de desempenho seja de um aluno  de um atleta.
 
-##V-1.0
-<br>
-Cadastro de usuarios (Clientes, Gestor, Equipe);
-<br>
-Geração de relatorio(Desempenho, Acesso, financeiro);
-<br>
-Vidéos auxiliares (Possibilidade de inserir pequenos moovies para orientar melhor o cliente)
+## Funcionalidades
 
-## Mercado
-[MIT](http://google.com.br)
 
-```python
-import foobar
 
-foobar.pluralize('word') # returns 'words'
-foobar.pluralize('goose') # returns 'geese'
-foobar.singularize('phenomena') # returns 'phenomenon'
-```
+
+## Usabilidade
+
+
+
+
+
+## Codificação
+
+
+
+
+
+## Banco de dados
+
+
