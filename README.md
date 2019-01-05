@@ -22,5 +22,8 @@ necessitam um feedbeck em tempo real de desempenho seja de um aluno  de um atlet
 
 
 ## Banco de dados
-
+Base de dados meuPersonal
+Tabela usuario;
+Tabela Profissional;
+Tabela Graficos.
 
