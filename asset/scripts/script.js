@@ -16,3 +16,14 @@ Function verificaDados (user,pass){
 }
 */
 
+function cadastrar(){
+	var user = getElementsByTagName('name-user');
+	var email = getElementsByTagName('email-user');
+	var senha = getElementsByTagName('pass-user');
+	
+	if(!empyt == user, email, senha){
+		document.write(user, email,senha);
+	}
+
+}
+

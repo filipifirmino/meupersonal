@@ -24,13 +24,66 @@
                 <input type="text" name="name-user" placeholder="login" required class="form-control">
                 <input type="password" name="pass-user" placeholder="pass" required class="form-control">
                 <input type="submit" class="btn btn-success form-control" value="Login">
-                <a href="#" id="a">Cadastre-se!</a>
+                <button type = "button" class="btn btn-default form-control" data-toggle="modal" data-target = "#modalCadastro">Cadastre-se!</button>
             </div>
         </form>
     </div>
 
 </div>
 
+<!-- Modal para cadastro-->
+<div class="modal fade" id="modalCadastro" tabindex="-1" role="dialog" aria-labelledby="modalCadastro" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalCadastroLabel">Cadastro</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+
+        <footer>
+            <div class="botom">
+                <div class="container">
+                    <nav>
+                        <ul>
+                            <li>SAC</li>
+                            <li>Mapa do site</li>
+                            <li>Parcerias</li>
+                            <li>Contrato</li>
+                            <li>Social</li>
+                        </ul>
+                    </nav>
+                
+                </div>
+            </div>
+        
+        </footer>
+
+      <div class="modal-body">
+        <form>
+            <div class="form-group ">
+                <input class="form-control" type="name" name="name-user" placeholder =  "Nome Completo" require/>
+            </div>
+            <div class="form-group ">
+                <input class="form-control" type="email" name="email-user" placeholder =  "e-mail" require/>
+            </div>
+            <div class="form-group ">
+                <input class="form-control" type="password" name="pass-user" placeholder =  "Senha" require/>
+            </div>    
+            <div class="form-group ">
+                <input class="form-control" type="password" name="re-pass-user" placeholder =  "Repita Senha" require/>
+            </div>
+            <button class = "btn btn-success" onclick = cadastrar() >Cadastrar</button>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+       
+      </div>
+    </div>
+  </div>
+</div>
 
 
 
