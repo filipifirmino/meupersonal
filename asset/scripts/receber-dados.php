@@ -5,7 +5,7 @@
  * Date: 02/01/19
  * Time: 10:26
  */
-
+	
     if(isset($_POST["name-user"]) && !empty($_POST["name-user"])){
         $user = $_POST["name-user"];
         $pass = $_POST["pass-user"];
@@ -16,5 +16,4 @@
     }else{
         echo "O usuario não envious os dados";
     }
-
 
