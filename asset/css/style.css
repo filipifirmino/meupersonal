@@ -5,8 +5,9 @@ body{
     /*background-color: lightsteelblue;*/
     background-image: url(../image/bg.jpg);
     background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: fixed;
+    background-size: cover;
+    overflow: auto;
+    
 }
 
 .cont-login{
@@ -34,6 +35,23 @@ body{
     background-color: black;
     color: #fff;
     height: 25px;
+    text-align: center;
+    font-size: 13px;   
+    width: 100%;
+    position: absolute;
+    bottom: 0; 
+}
+.botom ul li a{
+    text-decoration: none;
+    color: #c9c9c9;
+}
+.botom ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 5px;
+    color:#c9c9c9;
+    line-height: 15px;
+
 }
 
 

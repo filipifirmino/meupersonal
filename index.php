@@ -30,6 +30,23 @@
     </div>
 
 </div>
+<footer>
+            <div class="botom">
+                <div class="container">
+                    <nav>
+                        <ul>
+                            <li><a href="#">SAC</a></li>
+                            <li><a href="#">Mapa do site</a></li>
+                            <li><a href="#">Parcerias</a></li>
+                            <li><a href="#">Contrato</a></li>
+                            <li><a href="#">Social</a></li>
+                        </ul>
+                    </nav>
+                
+                </div>
+            </div>
+        
+        </footer>
 
 <!-- Modal para cadastro-->
 <div class="modal fade" id="modalCadastro" tabindex="-1" role="dialog" aria-labelledby="modalCadastro" aria-hidden="true">
@@ -41,24 +58,6 @@
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-
-        <footer>
-            <div class="botom">
-                <div class="container">
-                    <nav>
-                        <ul>
-                            <li>SAC</li>
-                            <li>Mapa do site</li>
-                            <li>Parcerias</li>
-                            <li>Contrato</li>
-                            <li>Social</li>
-                        </ul>
-                    </nav>
-                
-                </div>
-            </div>
-        
-        </footer>
 
       <div class="modal-body">
         <form>
