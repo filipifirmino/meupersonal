@@ -1,6 +1,6 @@
 <?php
 
-    public function conectadb(){
+     function conectadb(){
         $database = "meupersonal" ;
         $user = "root";
         $pass = '';
