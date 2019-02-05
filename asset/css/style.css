@@ -5,8 +5,9 @@ body{
     /*background-color: lightsteelblue;*/
     background-image: url(../image/bg.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 109%;
     overflow: auto;
+   
     
 }
 
@@ -41,6 +42,10 @@ body{
     position: absolute;
     bottom: 0; 
 }
+.botom ul{
+    padding: 0px;
+    margin: 0px;
+}
 .botom ul li a{
     text-decoration: none;
     color: #c9c9c9;
@@ -48,8 +53,8 @@ body{
 .botom ul li{
     list-style: none;
     display: inline-block;
-    padding: 5px;
     color:#c9c9c9;
+    padding: 5px;
     line-height: 15px;
 
 }
