@@ -15,17 +15,58 @@
     <title> New Document</title>
 </head>
 <body>
-        <div class="container">
-            <form method="POST" class="cont-login" >
-                <div class="form-group">
-                <label for="mensage">Deixe sua mensagem ao suporte</label>
-                <input type="text" class="form-control" name="text-mensage">
+        <div class="container-fluid">
+            <div class = "flex-container">
+                <div class="painel">
+                    <div class="title-box">
+                        Alunos
+                    </div>
+                    <?php 
+                        for($i=0; $i>=5; $i++){
+                            echo " <div class="lista"> Aluno </div> ";
+                        }
+                    
+                    ?>
                 </div>
-                <input type="submit" value="Enviar" class="btn btn-danger form-control" name="btn-enviar" id="btnEnviar">
-            </form>
-
-            <div class="cont-login">
+                <div class="painel">
+                    <div class="title-box">
+                        Turmas
+                    </div>
+                    <?php
+                        for($i=0; $i>=5; $i++){
+                            echo " <div class="list">Turma</div> ";
+                        }
+                    ?>
+                </div>
+                <div class="painel">
+                    <div class="title-box">
+                        Relatorio
+                    </div>
+                    <?php
+                        for($i=0; $i>=5; $i++){
+                            echo " <div class="list">Relarotio</div> ";
+                        }
+                    ?>
+                </div>
+                <div class="painel">
+                    <div class="title-box">
+                        Matriculas
+                    </div>
+                    <?php
+                        for($i=0; $i>=5; $i++){
+                            echo " <div class="list">Aluno</div> ";
+                        }
+                    ?>
+                </div>
+                <div class="painel">
+                <div class="title-box">
+                        Cadastrar
+                    </div>
+                    <a href="#">Aluno</a>
+                    <a href="#">Turma</a>
                 
+                </div>
+
             </div>
 
         </div>
