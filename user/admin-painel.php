@@ -19,7 +19,7 @@
         <div class="top-site">
             <div class="flex-container">
                 <div class="logo">
-                    Meu Personal
+                    <a href = "../index.php">Meu Personal</a>
                 </div>
                 <div class="info-user">
                     usuario 
