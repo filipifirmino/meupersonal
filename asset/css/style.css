@@ -99,10 +99,15 @@ body{
     position: fixed;
     background-color: #000;
     color: #fff;
-    min-height:50px;
+    min-height:25px;
+    width: 100%;
+    padding-left:10px;
+    padding-right: 10px;
+    margin-left: -15px;
 }
 .info-user{
     flex: 1;
+    text-align: right;
 }
 .logo{
     flex: 1;
