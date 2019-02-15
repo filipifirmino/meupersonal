@@ -1,61 +1,45 @@
-/*//Variaveis que recebem os dados do usuario
-var user = getElementsByTagName('user-name');
-var pass = getElementsByTagName('user-pass');
 
-//Function que verifica a veracidado dos dados
-
-Function verificaDados (user,pass){
-	if (user && pass == true) {
-		//Mosta o alerte de logado com sucesso
-		alert("Logado com sucesso");
-	}else{
-		// indica  erro e solicita que o usuario insira seus dados corretos.
-		alert("Email ou senha não conferem, tente novamente");
-
-	}
-}
-*/
 /*Graficos*/
-
-
-
-             var ctx = document.getElementById("myChart").getContext('2d');
-                var myChart = new Chart(ctx, {
-                    type: 'bar',
+var ctx = document.getElementById("myChart").getContext('2d');
+            var myChart = new Chart (ctx, {
+                    //Tipo do grafico 
+                    type: 'line',
+                    //Dados dso graficos
                     data: {
-                        labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
-                        datasets: [{
-                            label: '# of Votes',
-                            data: [12, 19, 3, 5, 2, 3],
-                            backgroundColor: [
-                                'rgba(255, 99, 132, 0.2)',
-                                'rgba(54, 162, 235, 0.2)',
-                                'rgba(255, 206, 86, 0.2)',
-                                'rgba(75, 192, 192, 0.2)',
-                                'rgba(153, 102, 255, 0.2)',
-                                'rgba(255, 159, 64, 0.2)'
-                            ],
-                            borderColor: [
-                                'rgba(255,99,132,1)',
-                                'rgba(54, 162, 235, 1)',
-                                'rgba(255, 206, 86, 1)',
-                                'rgba(75, 192, 192, 1)',
-                                'rgba(153, 102, 255, 1)',
-                                'rgba(255, 159, 64, 1)'
-                            ],
-                            borderWidth: 1
-                        }]
-                    },
-                    options: {
-                        scales: {
-                            yAxes: [{
-                                ticks: {
-                                    beginAtZero:true
+                        labels: ["Jan","Fev","Mar","Abr","Mai","Jun","Jul","Ago","Set","Out", "Nov", "Dez"],
+                            datasets: [
+                                {
+                                label: "TAXAS DE CONVERÇÃO - 2018",
+                                data: [5,10,12,68,15,44,09,22,13,10,5,91],
+                                borderWidth:1,
+                                borderColor: 'rgba(77,166,253,0.85)',
+                                backgroundColor: 'transparent',
+
+                                },
+                                {
+                                label: "TAXAS DE CONVERÇÃO - 2019", // titulo do grafico
+                                data: [9,10,18,68,18,44,15,22,100,10,90,91], // Indices de aferimento
+                                borderWidth:1, // Espessura da linha
+                                borderColor: 'rgba(19,160,13,0.85)', // Cor da linha do grafico
+                                backgroundColor: 'transparent' // Cor de fundo do objeto.
+                                },
+                                {
+                                label: "TAXAS DE CONVERÇÃO - 2017",
+                                data: [1,10,20,68,50,44,55,55,100,60,90,100],
+                                borderWidth:1,
+                                borderColor: 'rgba(255, 0, 0,0.85)',
+                                backgroundColor: 'transparent'
                                 }
-                            }]
-                        }
+                                ]
+                
+
+                    },
+                    //Configuraçãos das options aqui
+                    option:{
+
                     }
-                });
+
+            });
 
 /*Graficos */
 
