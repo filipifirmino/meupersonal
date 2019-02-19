@@ -112,3 +112,17 @@ body{
 .logo{
     flex: 1;
 }
+
+.menu-lateral{
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 100px;
+    min-height: 100%;
+    background-color: #c9c9c9;
+    
+}
+.picture_user{
+    width: 75px;
+    height: 75px;
+    margin: 10px;
+}

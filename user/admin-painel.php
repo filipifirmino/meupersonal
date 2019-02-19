@@ -82,8 +82,12 @@
                 </div>
 
             </div>
+              
+
 
         </div>
+
+       
 
         <!-- Modal para cadastro de aluno-->
         <div class="modal fade" id="modalCadastro" tabindex="-1" role="dialog" aria-labelledby="modalCadastro" aria-hidden="true">
@@ -146,6 +150,7 @@
     </div>
   </div>
 </div>
+
 
         <!-- modal para cadastro de turma-->
 

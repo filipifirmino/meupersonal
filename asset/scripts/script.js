@@ -4,7 +4,7 @@ var ctx = document.getElementById("myChart").getContext('2d');
             var myChart = new Chart (ctx, {
                     //Tipo do grafico 
                     type: 'line',
-                    //Dados dso graficos
+                    //Dados dos graficos
                     data: {
                         labels: ["Jan","Fev","Mar","Abr","Mai","Jun","Jul","Ago","Set","Out", "Nov", "Dez"],
                             datasets: [
