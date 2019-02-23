@@ -33,7 +33,7 @@ body{
 }
 /* Formatação da tela de login*/
 .main{
-	margin-top: -150px;
+	margin-top: 0px;
 }
 .login{
 	paddin:10px;
@@ -89,6 +89,7 @@ body{
 .link:hover{
 	/*Ao passar em cima do campo com mouse*/
 	color:#1B67FD;
+	text-decoration: none;
 	
 	
 }
