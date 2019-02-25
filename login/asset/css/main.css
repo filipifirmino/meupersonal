@@ -46,6 +46,7 @@ text-align: right;
 .user a{
 	text-decoration: none;
 	color: #fff;
+	
 }
 .logo a{
 	text-decoration: none;
@@ -64,4 +65,12 @@ text-align: right;
 	margin-left: 10px;
 	margin-bottom: 10px;
 	
+}
+.btn-alert{
+	padding: 10px;
+	color: black;
+	border-radius: 5px;
+	margin-right: 10px;
+	background-color: rgb(228, 178, 17);
+	width: 120px;
 }

@@ -11,7 +11,7 @@
 <body>
    <div class="container">
     <div class = "logo">
-    <a href ="#">
+    <a href ="index.php">
         <?php
         $nomedosite= "Personal";
             echo $nomedosite;
@@ -19,10 +19,10 @@
          </a>
     </div>
     <div class = "user">
-    <a href ="#">
+    <a href ="login/index.html">
     <?php
-        $nomedosite= "Login";
-            echo $nomedosite;
+        $user= '<div class ="btn-alert">Login/Cadastro</div>';
+            echo $user;
         ?>
     </a>
     </div>
