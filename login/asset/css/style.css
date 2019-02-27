@@ -1,8 +1,8 @@
 /*Importações*/
 @import url('https://fonts.googleapis.com/css?family=Kalam');
 @font-face {
-	font-family: "Arciform";
-	src: url("fonts/Arciform.otf") format("opentype");
+	font-family: 'fontLogo';
+	src: url("../fonts/Arciform.otf");
 	font-weight: normal;
 	font-style: normal;
 }
@@ -135,8 +135,7 @@ body{
 /*importando font local*/
 
 .name-logo{
-	/*font-family:'Alciform', normal;*/
-	font-family: 'Kalam', cursive;
+	font-family:'fontLogo';
 	color: #fff;
 	margin-left: 20px;
 	font-size: 10pt;
@@ -177,18 +176,20 @@ body{
 	color: rgba(202, 200, 200, 0.63);
 	height: 17%;
 	display: flex;
+	
 }
 .info-down{
-	align-items: center;
-	text-align: center;
+	justify-items: flex-end;
 	flex: 1;
-	
+	display: flex;
 	/*Formatação da font*/
 	font-size: 10pt;
 	
 }
 
 .item-down{
+	display: flex;
+	justify-content: flex-end;
 	margin-left:20px;
 	float: left;
 }

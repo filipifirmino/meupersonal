@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Kalam');
 @font-face {
-	font-family: "Arciform";
-	src: url("fonts/Arciform.otf") format("opentype");
+	font-family: 'fontLogo';
+	src: url("../fonts/Arciform.otf");
 	font-weight: normal;
 	font-style: normal;
 }
@@ -34,23 +34,27 @@ body{
 }
 .logo{
  flex: 1;
- font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
-
+ font-family: 'fontLogo';
+ font-size: 20pt;
 }
 .user{
 flex: 1;
-text-align: right;
+display: flex;
+justify-content: right;
 
 }
 
 .user a{
 	text-decoration: none;
 	color: #fff;
+	height: 47px;
 	
 }
 .logo a{
 	text-decoration: none;
 	color: #fff;
+
+	
 }
 .conteudo{
 	width: 400px;
@@ -67,10 +71,11 @@ text-align: right;
 	
 }
 .btn-alert{
-	padding: 10px;
-	color: black;
-	border-radius: 5px;
-	margin-right: 10px;
-	background-color: rgb(228, 178, 17);
+	padding: 12px;
+	color: #fff;
+	font-weight: bold;
+	border-radius: 20px;
+	background-image: linear-gradient(#f04d0d,#faaa14);
 	width: 120px;
+	text-align: center;
 }
