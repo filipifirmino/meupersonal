@@ -13,17 +13,15 @@ body{
 	margin:0;
 	padding: 0;
 	background-image: linear-gradient(#3763FD,#4218b8); /*url(image/1bg.jpg)*/
-	background-repeat: no-repeat;
-	background-position: fixed;
-	overflow: hidden;
+	/*Altura do body*/
+	height: 100vh;
 	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
-
 .container{
 	display: flex; /*Uso de flex box*/
 	justify-content: center;
 	align-items: center;
-	height: 83%; /*altura total do container hv = % */
+	max-height:100vh;	 /*altura total do container hv = % */
 	flex-direction: column;
 }
 .container-top{
@@ -36,7 +34,6 @@ body{
 	margin-top: 0px;
 }
 .login{
-	paddin:10px;
 	min-width:250px; 
 }
 
@@ -117,6 +114,12 @@ body{
 	
 }
 /*Formatação exclusivas*/
+.direita{
+	text-align: right;
+}
+.meio{
+	text-align: center;
+}
 .right{
 	/*Alinhar a direita link tela de login*/
 	margin-left: 15%;
@@ -174,23 +177,25 @@ body{
 /*Formatação do rodapé*/
 .rodape{
 	color: rgba(202, 200, 200, 0.63);
-	height: 17%;
+	margin-top: 28%;
 	display: flex;
+	
 	
 }
 .info-down{
-	justify-items: flex-end;
-	flex: 1;
+	/*Formatação de seu conteudo*/
 	display: flex;
+	align-items: flex-end;
+	/*Formatação da propria div*/
+	flex: 1;
 	/*Formatação da font*/
 	font-size: 10pt;
+	
 	
 }
 
 .item-down{
-	display: flex;
-	justify-content: flex-end;
-	margin-left:20px;
 	float: left;
+	margin-left:10px;
 }
 

@@ -38,5 +38,17 @@
         </div>
     
     </div>
+    <div class="container">
+        <div class ="conteudo">
+                <?php
+                    $box = '<div class="box"></div> ';
+
+                    for($i = 0; $i <=5 ; $i++){
+                        echo "$box";
+                    }
+                ?>
+
+            </div>    
+    </div>
 </body>
 </html>

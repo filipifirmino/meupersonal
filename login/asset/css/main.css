@@ -19,12 +19,12 @@ body{
     color: #fff;
 }
 .container{
-    height: 50vh;
+    height: 33vh;
 	padding: 10px;
 	display: flex;
 }
 .container-white{
-	height: 50vh;
+	height: 33vh;
 	padding: 10px;
 	display: flex;
 	background-color: #fff; 
