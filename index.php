@@ -6,7 +6,7 @@
     <title>Personal 1.0</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="login/asset/css/main.css">
-    <script src="main.js"></script>
+    <script src="login/asset/script/main.js"></script>
 </head>
 <body>
    <div class="container">
@@ -19,12 +19,9 @@
          </a>
     </div>
     <div class = "user">
-    <a href ="login/index.html">
-    <?php
-        $user= '<div class ="btn-alert">Login/Cadastro</div>';
-            echo $user;
-        ?>
-    </a>
+    
+    <button class="btn-alert" onclick="linkar()">Login/Cadastro</div>
+    
     </div>
    </div>
    <div class="container-white">

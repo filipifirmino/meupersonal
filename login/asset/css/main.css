@@ -71,11 +71,17 @@ justify-content: right;
 	
 }
 .btn-alert{
-	padding: 12px;
+	background-image: linear-gradient(#ffda33,#eb670f);
+	padding: 10px;
+	border:none;
+	border-radius:20px;
 	color: #fff;
 	font-weight: bold;
-	border-radius: 20px;
-	background-image: linear-gradient(#f04d0d,#faaa14);
-	width: 120px;
-	text-align: center;
+	width: 140px;
+	height: 40px;
+}
+.btn-alert:hover{
+	box-shadow:1px 1px 5px #fff;
+	color:#3763FD;
+	cursor: pointer;
 }
