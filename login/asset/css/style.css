@@ -24,9 +24,11 @@ body{
 	display: flex; /*Uso de flex box*/
 	width: 100%;
 	height: 100%;
-	justify-content: center;
+	margin-top:15%;
+	/*justify-content: center;*/
 	align-items: center;
 	flex-direction: column;
+	
 }
 .container-top{
 	display: flex; /*Uso de flex box*/
@@ -183,26 +185,47 @@ body{
 /*Formatação do rodapé*/
 .rodape{
 	color: rgba(202, 200, 200, 0.63);
-	align-items: flex-end;
+	margin-top:20%;
 	display: flex;
-	border:1px solid red;
+	
 	width: 100%;
 	
 }
 .info-down{
 	/*Formatação de seu conteudo*/
 	display: flex;
-	align-items: flex-end;
+	
 	/*Formatação da propria div*/
 	flex: 1;
 	/*Formatação da font*/
 	font-size: 10pt;
-	border:1px solid red;	
+		
+	
+}
+.info-down-right{
+	/*Formatação de seu conteudo*/
+	display: flex;
+	justify-content: flex-end;
+	/*Formatação da propria div*/
+	flex: 1;
+	/*Formatação da font*/
+	font-size: 10pt;
+	
+}
+.info-down-center{
+	/*Formatação de seu conteudo*/
+	display: flex;
+	justify-content: center;
+	/*Formatação da propria div*/
+	flex: 1;
+	/*Formatação da font*/
+	font-size: 10pt;
+	
 }
 
 .item-down{
 	float: left;
 	margin-left:10px;
-	border:1px solid red;
+
 }
 
