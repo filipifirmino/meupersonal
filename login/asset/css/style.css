@@ -13,15 +13,15 @@ body{
 	margin:0;
 	padding: 0;
 	background-image: linear-gradient(#3763FD,#4218b8); /*url(image/1bg.jpg)*/
+	background-repeat: no-repeat;
+	overflow: hidden;
 	/*Altura do body*/
-	height: 100vh;
 	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 .container{
 	display: flex; /*Uso de flex box*/
 	justify-content: center;
 	align-items: center;
-	max-height:100vh;	 /*altura total do container hv = % */
 	flex-direction: column;
 }
 .container-top{
@@ -135,8 +135,8 @@ body{
 }
 
 /*Formatação do topo*/
-/*importando font local*/
 
+/*importando font local*/
 .name-logo{
 	font-family:'fontLogo';
 	color: #fff;
@@ -179,7 +179,7 @@ body{
 	color: rgba(202, 200, 200, 0.63);
 	margin-top: 28%;
 	display: flex;
-	
+	border:1px solid red;
 	
 }
 .info-down{
@@ -189,9 +189,7 @@ body{
 	/*Formatação da propria div*/
 	flex: 1;
 	/*Formatação da font*/
-	font-size: 10pt;
-	
-	
+	font-size: 10pt;	
 }
 
 .item-down{
