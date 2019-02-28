@@ -12,14 +12,18 @@ body{
 	/*Formatação da body*/
 	margin:0;
 	padding: 0;
+	height: 100vh;
+	width: 100%;
 	background-image: linear-gradient(#3763FD,#4218b8); /*url(image/1bg.jpg)*/
 	background-repeat: no-repeat;
 	overflow: hidden;
 	/*Altura do body*/
-	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande','Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 .container{
 	display: flex; /*Uso de flex box*/
+	width: 100%;
+	height: 100%;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
@@ -97,6 +101,7 @@ body{
 }
 .social-media{
 	margin-top:10px;
+	margin-bottom: 20px;
 	min-width: 200px;
 	text-align: center;
 	}
@@ -109,6 +114,7 @@ body{
 	
 }
 .logo{
+	margin-top: -50px;
 	margin-bottom: 10px;
 	align-self: center;
 	
@@ -177,9 +183,10 @@ body{
 /*Formatação do rodapé*/
 .rodape{
 	color: rgba(202, 200, 200, 0.63);
-	margin-top: 28%;
+	align-items: flex-end;
 	display: flex;
 	border:1px solid red;
+	width: 100%;
 	
 }
 .info-down{
@@ -189,11 +196,13 @@ body{
 	/*Formatação da propria div*/
 	flex: 1;
 	/*Formatação da font*/
-	font-size: 10pt;	
+	font-size: 10pt;
+	border:1px solid red;	
 }
 
 .item-down{
 	float: left;
 	margin-left:10px;
+	border:1px solid red;
 }
 
