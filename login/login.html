@@ -12,7 +12,7 @@
 
 	<!--Importação do css-->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="asset/css/style.css">
+	<link rel="stylesheet" type="text/css" href="../asset/css/style.css">
 	
 </head>
 <body>
@@ -36,7 +36,7 @@
 		
 		<div class="main">
 			<div class="logo">
-				<img src="asset/image/logo.svg" alt="logo" class="logo"/>
+				<img src="../asset/image/logo.svg" alt="logo" class="logo"/>
 			</div>
 				<div class="login">
 					<form action="#" method="POST">
@@ -53,15 +53,15 @@
 			<div class="social-media">
 					<fieldset>
 				<legend for="social-media">Siga-nos!</legend>
-				<a href="#"><img src="asset/image/f.svg" alt="facebook" id="facebook" class="icon-social" onmouseover="document.getElementById(this.id).src='asset/image/f_blue.svg'" onmouseout="document.getElementById(this.id).src='asset/image/f.svg'"></a>
+				<a href="#"><img src="../asset/image/f.svg" alt="facebook" id="facebook" class="icon-social" onmouseover="document.getElementById(this.id).src='asset/image/f_blue.svg'" onmouseout="document.getElementById(this.id).src='asset/image/f.svg'"></a>
 
-				<a href="#"><img src="asset/image/instagram-logo.svg"alt ="instagran" class="icon-social" id="instagran" onmouseover="document.getElementById(this.id).src='asset/image/instagram.svg'" onmouseout="document.getElementById(this.id).src='asset/image/instagram-logo.svg'"></a>
+				<a href="#"><img src="../asset/image/instagram-logo.svg"alt ="instagran" class="icon-social" id="instagran" onmouseover="document.getElementById(this.id).src='asset/image/instagram.svg'" onmouseout="document.getElementById(this.id).src='asset/image/instagram-logo.svg'"></a>
 
-				<a href="#"><img src="asset/image/g.svg"alt ="Google Plus" class="icon-social" id="google" onmouseover="document.getElementById(this.id).src='asset/image/g_red.svg'" onmouseout="document.getElementById(this.id).src='asset/image/g.svg'"></a>
+				<a href="#"><img src="../asset/image/g.svg"alt ="Google Plus" class="icon-social" id="google" onmouseover="document.getElementById(this.id).src='asset/image/g_red.svg'" onmouseout="document.getElementById(this.id).src='asset/image/g.svg'"></a>
 
-				<a href="#"><img src="asset/image/s.svg" alt="Snapchat" class="icon-social" id="snap" onmouseover="document.getElementById(this.id).src='asset/image/s_yellow.svg'" onmouseout="document.getElementById(this.id).src='asset/image/s.svg'"></a>
+				<a href="#"><img src="../asset/image/s.svg" alt="Snapchat" class="icon-social" id="snap" onmouseover="document.getElementById(this.id).src='asset/image/s_yellow.svg'" onmouseout="document.getElementById(this.id).src='asset/image/s.svg'"></a>
 
-				<a href="#"><img src="asset/image/t.svg" alt="twitter" class="icon-social" id="tt" onmouseover="document.getElementById(this.id).src='asset/image/t_light-blue.svg'" onmouseout="document.getElementById(this.id).src='asset/image/t.svg'"></a>
+				<a href="#"><img src="../asset/image/t.svg" alt="twitter" class="icon-social" id="tt" onmouseover="document.getElementById(this.id).src='asset/image/t_light-blue.svg'" onmouseout="document.getElementById(this.id).src='asset/image/t.svg'"></a>
 			</fieldset>
 			</div>
 		
@@ -69,9 +69,9 @@
 	
 				<div class="info-down">
 					
-							<p class="item-down">SAC</p>
-							<p class="item-down">Privacidade</p>
-							<p class="item-down">Mapa do site</p>
+							<p class="item-down"><a href="#">SAC</a></p>
+							<p class="item-down"><a href="#">Privacidade</a></p>
+							<p class="item-down"><a href="#">Mapa do site</a></p>
 						
 				</div>
 		
@@ -80,8 +80,8 @@
 				</div>
 				<div class="info-down-right ">
 						
-								<p class="item-down">Trabalhe conosco</p>
-								<p class="item-down">Parceria</p>
+								<p class="item-down"><a href="#">Trabalhe conosco</a></p>
+								<p class="item-down"><a href="#">Parceria</a></p>
 									
 						
 				</div>
@@ -89,14 +89,36 @@
 			</div>
 
 
-
-
-
-
-
-
 	</div>
-	
+	<div class="container-free">
+		<div class="info1">
+
+		</div>
+		<div class="info2">
+
+		</div>
+	</div>
+
+		<style>
+			.container-free{
+				background-color: #000;
+				color:#fff;
+				font-size: 12pt;
+				height: 400px;
+				width: 100%;
+
+			}
+			.info1{
+				float: left;
+				border:1px solid red;
+			}
+			.info2{
+				float: left;
+				border:1px solid red;
+			}
+		
+		
+		</style>
 
 
 	<!--Modal para cadastro-->

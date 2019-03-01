@@ -16,7 +16,7 @@ body{
 	width: 100%;
 	background-image: linear-gradient(#3763FD,#4218b8); /*url(image/1bg.jpg)*/
 	background-repeat: no-repeat;
-	overflow: hidden;
+	/*overflow: hidden;*/
 	/*Altura do body*/
 	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande','Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
@@ -228,4 +228,7 @@ body{
 	margin-left:10px;
 
 }
-
+.item-down a{
+	text-decoration:none;
+	color:#fff;
+}

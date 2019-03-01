@@ -1,0 +1,101 @@
+/*Importações*/
+@import url('https://fonts.googleapis.com/css?family=Kalam');
+@font-face {
+	font-family: 'font-logo';
+	src: url('../fonts/Arciform.otf');
+}
+
+
+body{
+	/*Formatação da body*/
+	margin:0;
+	padding: 0;
+	width: 100%;
+	height: 100vh;
+	background-image: linear-gradient(#3763FD,#4218b8); /*url(image/1bg.jpg)*/
+	background-repeat: no-repeat;
+	background-position: fixed;
+	overflow: hidden;
+	font-family: 'Courier New', Courier, monospace;
+}
+/*Sobreposição de formatações*/
+.container-fluid{
+	padding: 0px;
+}
+.container-int{
+		display: flex;
+		margin: 0px;
+		padding: 0px;
+		
+}
+.menu-left{
+	flex: 1;
+	background-color:rgb(10, 14, 27); 
+	color: #fff;
+	height: 100vh;
+	margin: 0;
+}
+.cont-right{
+	flex:4;
+}
+/*Posicionamento da logo*/
+	.logo{
+		text-align: center;
+		margin-top: 10%;
+	}
+/*Posicionamento da imagem do usuario*/
+
+	.image-user{
+		text-align: center;
+		margin-top:10%;
+	}
+
+/*Ajustes na imagem*/
+	.image-user img{
+		width: 100px;
+		height: 100px;
+	}	
+
+
+/*Conteudo das divis*/
+.name-logo{
+	font-family:'font-logo' ;
+	color: #fff;
+}
+
+.name-logo a{
+	text-decoration: none;
+	color: #fff;
+
+}
+/*Nome do usuario no painel administrativo*/
+.cont-usuario{
+	text-align: center;
+	margin-bottom: 10%;
+}
+.usuario{
+	margin-top:5%;
+	font-size: 15pt;
+}
+
+/*formatação dos itens do menu lateral*/
+.item-menu{
+	border-bottom: 1px solid #cecece;
+	padding: 5px;
+	clear: both;	
+}
+.img-menu{
+	float: left;
+}
+.img-menu img{
+	width: 25px;
+	height: 25px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+/*Hover para o menu*/
+.item-menu:hover{
+	background-color:rgba(255,255,255,0.5);
+	 
+}
