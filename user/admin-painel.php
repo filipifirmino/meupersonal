@@ -31,31 +31,37 @@
                     <div class="img-menu">
                         <img src="../asset/image/padm/alunos.svg" alt="icone">
                     </div>
-                    Menu 1
+                    Novo
                 </div>
                 <div class="item-menu">
                     <div class="img-menu">
-
+                    <img src="../asset/image/padm/resume.svg" alt="icone">
                     </div>
-                    Menu 2
+                    Prescrever
                 </div>
                 <div class="item-menu">
                     <div class="img-menu">
-
+                    <img src="../asset/image/padm/diagram.svg" alt="icone">
                     </div>
-                    Menu 3
+                    Desempenho
                 </div>
                 <div class="item-menu">
                     <div class="img-menu">
-
+                    <img src="../asset/image/padm/file.svg" alt="icone">
                     </div>
-                    Menu 4
+                    Relatorios
                 </div>
                 <div class="item-menu">
                     <div class="img-menu">
-
+                    <img src="../asset/image/padm/hand.svg" alt="icone">
                     </div>
-                    Menu 5
+                    Pagamentos
+                </div>
+                <div class="logout">
+                    <div class="image-sair">
+                        <img src="../asset/image/padm/logout.svg"/>
+                    </div>
+                    Sair
                 </div>
         </div>  
         <div class="cont-right">
