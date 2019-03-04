@@ -1,5 +1,6 @@
 /*Importações*/
 @import url('https://fonts.googleapis.com/css?family=Kalam');
+@import url('https://fonts.googleapis.com/css?family=Comfortaa');
 @font-face {
 	font-family: 'font-logo';
 	src: url('../fonts/Arciform.otf');
@@ -80,10 +81,11 @@ body{
 
 /*formatação dos itens do menu lateral*/
 .item-menu{
-	border-bottom: 1px solid #cecece;
+	/*border-bottom: 1px solid #cecece;*/
 	padding: 5px;
 	clear: both;	
 	font-size: 15pt;
+	font-family: 'Comfortaa', cursive;
 }
 .img-menu{
 	float: left;
@@ -93,11 +95,6 @@ body{
 	height: 25px;
 	margin-left: 10px;
 	margin-right: 20px;
-}
-.logout{
- text-align: center;
- margin-top: 20%;
- 
 }
 .image-sair{
 
@@ -109,5 +106,9 @@ body{
 /*Hover para o menu*/
 .item-menu:hover{
 	background-color:rgba(255,255,255,0.5);
+	border-right: 5px solid rgb(9, 182, 250);
 	 
+}
+.logout:hover{
+	background-color:rgba(255,255,255,0.5);
 }

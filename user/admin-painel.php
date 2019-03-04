@@ -55,14 +55,9 @@
                     <div class="img-menu">
                     <img src="../asset/image/padm/hand.svg" alt="icone">
                     </div>
-                    Pagamentos
+                    Financeiro
                 </div>
-                <div class="logout">
-                    <div class="image-sair">
-                        <img src="../asset/image/padm/logout.svg"/>
-                    </div>
-                    Sair
-                </div>
+                
         </div>  
         <div class="cont-right">
         
