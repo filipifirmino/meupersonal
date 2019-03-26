@@ -11,6 +11,10 @@
             $sql = $pdo->query($sql);
 
             if($sql-> rowCount() > 0){
+
+                foreach ($sql->fetchAll() as $usuario){
+                        echo "Nome: ".$usuario["nome"]. " / ". "E-mail: ".$usuario["email"]."<br>";
+                }
                 
             }else{
                 echo "Não há registros ha serem mostrados";
