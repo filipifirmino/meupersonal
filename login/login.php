@@ -41,7 +41,7 @@
 					<img src="../asset/image/logo.svg" alt="logo" class="logo"/>
 				</div>
 					<div class="login">
-						<form action="#" method="POST">
+						<form action="valida.php" method="POST">
 							<input type="text" name="login-user" placeholder="Login" class="input"><br>
 							<input type="password" name="pass-user" placeholder="Senha" class="input"><br>
 							<input type="submit" name="" value="Logar" class="btn-enviar">
@@ -50,8 +50,8 @@
 						<a href="#" class="link left">Esqueceu a senha?</a>
 						<a href="#" class="link right" data-toggle="modal" data-target = "#modalCadastro"> cadastre-se!</a>
 					</div>
-			
-			
+
+								
 						<div class="social-media">
 								<fieldset>
 							<legend for="social-media">Siga-nos!</legend>
@@ -101,7 +101,6 @@
 		
 			</div>
 		
-
 
 
 

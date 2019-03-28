@@ -1,29 +1,24 @@
 <?php
     
-    $dsn = "mysql:dbname=estudo; host=localhost";
+    $dsn = "mysql:dbname=meupersonal; host=localhost";
     $dbuser = "root";
     $dbpass = "dijital123";
 
         try{
 
             $pdo = new PDO($dsn, $dbuser, $dbpass);
-            $sql = "SELECT *  FROM user";
-            $sql = $pdo->query($sql);
-
-            if($sql-> rowCount() > 0){
-
-                foreach ($sql->fetchAll() as $usuario){
-                        echo "Nome: ".$usuario["nome"]. " / ". "E-mail: ".$usuario["email"]."<br>";
-                }
+                /*Conectando ao banco de dados*/
+            $sql = $db ->query("SELECT *  FROM user WHERE email = '$login' AND senha= '$senha'");
+                /*Preparando a query de consulta*/ 
                 
-            }else{
-                echo "Não há registros ha serem mostrados";
-            }
+            if($sql-> rowCount() > 0){
+                   $dado = $sql->fetch();
+
+                $_SESSION['id'] = $dado['id'];
+                header ("Location:../user/admin-painel.php");
             
 
         }catch(PDOException $e){
             echo "Erro: ". $e-> getMessage();
         }
-
-       
 ?>
