@@ -9,13 +9,13 @@ necessitam um feedbeck em tempo real de desempenho seja de um aluno  de um atlet
 
 
 
-## Usabilidade
+## Caso de uso
 
 
 
 
 
-## Codificação
+## Documentação
 
 
 
@@ -23,7 +23,7 @@ necessitam um feedbeck em tempo real de desempenho seja de um aluno  de um atlet
 
 ## Banco de dados
 Base de dados meuPersonal
-Tabela usuario;
+Tabela user;
 Tabela Profissional;
 Tabela Graficos.
 
