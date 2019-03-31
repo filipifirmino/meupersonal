@@ -8,7 +8,7 @@
 
             $pdo = new PDO($dsn, $dbuser, $dbpass);
                 /*Conectando ao banco de dados*/
-            $sql = $db ->query("SELECT *  FROM user WHERE email = '$login' AND senha= '$senha'");
+            $sql = $pdo ->query("SELECT *  FROM user WHERE email = '$login' AND senha= '$senha'");
                 /*Preparando a query de consulta*/ 
                 
             if($sql-> rowCount() > 0){
@@ -18,7 +18,7 @@
                 header ("Location:../user/admin-painel.php");
             
 
-        }catch(PDOException $e){
+        } catch(PDOException $e){
             echo "Erro: ". $e-> getMessage();
         }
 ?>

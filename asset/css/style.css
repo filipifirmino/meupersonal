@@ -101,8 +101,8 @@ body{
 	font-size: 10pt;
 	text-decoration:none;
 	float: left;
-	margin-left: 10px;
 	margin-bottom: 10px;
+	
 
 }
 .link:hover{
@@ -151,7 +151,7 @@ body{
 }
 .right{
 	/*Alinhar a direita link tela de login*/
-	margin-left: 15%;
+	
 }
 .left{
 	/*Alinhar a esquerda link tela de login*/
@@ -257,4 +257,24 @@ body{
 .item-down a{
 	text-decoration:none;
 	color:#fff;
+}
+
+/*butoes login*/
+.cont-buttons{
+	display: flex;
+	border:1px solid red;
+}
+.btn1{
+	border:1px solid green;
+	flex:1;
+
+	
+	
+}
+.btn2{
+	border:1px solid green;
+	flex:1;
+	
+	
+	
 }

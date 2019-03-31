@@ -47,8 +47,14 @@
 							<input type="submit" name="" value="Logar" class="btn-enviar">
 
 						</form>
-						<a href="#" class="link left">Esqueceu a senha?</a>
+							<div class="cont-buttons">
+									<div class="btn1">
+						<a href="#" class="link left" data-toggle="modal" data-target = "#modalReplace">Esqueceu a senha?</a>
+										</div>	
+										<div class="btn2">
 						<a href="#" class="link right" data-toggle="modal" data-target = "#modalCadastro"> cadastre-se!</a>
+										</div>
+							</div>
 					</div>
 
 								
@@ -102,8 +108,36 @@
 			</div>
 		
 
-
-
+<!-- modal Replace-->
+<div class="modal fade" id="modalReplace" tabindex="-1" role="dialog" aria-labelledby="modalReplace" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+		  <div class="modal-content">
+			<div class="modal-header">
+			  <h5 class="modal-title" id="modalReplaceLabel">Recuperar Senha</h5>
+			  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+			  </button>
+			</div>
+	  
+			<div class="modal-body">
+			  <form action = "../asset/script/pdoUpdate.php"  method= "POST">
+				  
+				  <div class="form-group ">
+					  <input class="form-control" type="email" name="email-user" placeholder =  "e-mail" require/>
+				  </div>
+				  <div class="form-group ">
+					  <input class="form-control" type="password" name="pass-user" placeholder =  "Senha" require/>
+				  </div>    
+				  
+				  <button class = "btn btn-success" onclick = cadastrar() >Cadastrar</button>
+			  </form>
+			</div>
+			<div class="modal-footer">
+			  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+			 
+			</div>
+		</div>
+	</div>
 
 
 
@@ -123,7 +157,7 @@
 			</div>
 	  
 			<div class="modal-body">
-			  <form>
+			  <form action = "../asset/script/pdoInsert.php"  method= "POST">
 				  <div class="form-group ">
 					  <input class="form-control" type="name" name="name-user" placeholder =  "Nome Completo" require/>
 				  </div>
@@ -133,8 +167,11 @@
 				  <div class="form-group ">
 					  <input class="form-control" type="password" name="pass-user" placeholder =  "Senha" require/>
 				  </div>    
-				  <div class="form-group ">
+				  <!--<div class="form-group ">
 					  <input class="form-control" type="password" name="re-pass-user" placeholder =  "Repita Senha" require/>
+				  </div>-->
+					<div class="form-group ">
+					  <input class="form-control" type="text" name="fone-user" placeholder =  "Ex: (99)-9 9999.9999" require/>
 				  </div>
 				  <button class = "btn btn-success" onclick = cadastrar() >Cadastrar</button>
 			  </form>

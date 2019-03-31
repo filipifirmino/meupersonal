@@ -1,3 +1,3 @@
 function linkar(){
-    window.location.href= "login/login.html";
+    window.location.href= "login/login.php";
 }
