@@ -16,8 +16,8 @@
 	
 </head>
 <body>
-
-	<div class="container-top">
+    <div class="containerAll">
+	    <div class="container-top">
 			<div class="name-logo">
 					<h4><a href="..\index.php" >Personal</a></h4>
 			</div>
@@ -33,7 +33,7 @@
 					</nav>
 				</div>
 	</div>
-		
+
 	<div class="container">
 	
 			<div class="main">
@@ -48,12 +48,12 @@
 
 						</form>
 							<div class="cont-buttons">
-									<div class="btn1">
-						<a href="#" class="link left" data-toggle="modal" data-target = "#modalReplace">Esqueceu a senha?</a>
-										</div>	
-										<div class="btn2">
-						<a href="#" class="link right" data-toggle="modal" data-target = "#modalCadastro"> cadastre-se!</a>
-										</div>
+									
+						<a href="#" class="btn btn-primary" data-toggle="modal" data-target = "#modalReplace">Esqueceu a senha?</a>
+									
+										
+						<a href="#" class="btn btn-primary" data-toggle="modal" data-target = "#modalCadastro"> cadastre-se!</a>
+										
 							</div>
 					</div>
 
@@ -80,7 +80,7 @@
 	</div>
 
 				
-</div>
+
 					<!-- Rodapé fora do container-->
 
 			
@@ -106,7 +106,8 @@
 				</div>
 		
 			</div>
-		
+        </div>
+    </div>
 
 <!-- modal Replace-->
 <div class="modal fade" id="modalReplace" tabindex="-1" role="dialog" aria-labelledby="modalReplace" aria-hidden="true">
@@ -187,7 +188,7 @@
 
 
 
-<script type="text/javascript" src="asset/script/action.js"></script> <!--Script interno-->
+<script type="text/javascript" src="../asset/script/action.js"></script> <!--Script interno-->
 <!--Scripts do bootstrap-->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>

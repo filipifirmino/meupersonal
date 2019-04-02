@@ -12,16 +12,22 @@ body{
 	/*Formatação da body*/
 	margin:0;
 	padding: 0;
-	height: 100%;
+	/*height: 100%;*/
 	background-image: linear-gradient(#3763FD,#4218b8); /*url(image/1bg.jpg)*/
 	background-repeat: no-repeat;
-	overflow: hidden;
+	/*overflow: hidden;*/
 	
 	/*Altura do body*/
 	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande','Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
+.containerAll{
+	display: flex;
+	flex-direction: column;
+	height:100vh;
+	justify-content: space-between;
+}
 
-.container{
+#container{
 	display: flex; /*Uso de flex box*/
 	width: 100%;
 	/*height: 100%;*/
@@ -31,11 +37,13 @@ body{
 
 	
 }
+
 .container-top{
-	display: flex; /*Uso de flex box*/
+	/*display: flex; *//*Uso de flex box*/
 	justify-content: center;
 	align-items: center;
-	flex: 1;
+
+
 	/*border: 1px solid red;*/
 }
 /* Formatação da tela de login*/
@@ -48,9 +56,12 @@ body{
 }
 .main{
 	margin-top: 0px;
-	padding:20px;
+	margin-bottom: 0px;
+	/*padding:20px;*/
 	/*border:1px solid green;*/
-	min-height: 720px;
+	/*min-height: 720px;*/
+
+
 
 }
 .login{
@@ -175,6 +186,8 @@ body{
 	flex-wrap: nowrap;
 	padding: 0px;
 	margin-bottom: 0px;
+	float: left;
+	height: 28px;
 	
 }
 .name-logo a{
@@ -189,6 +202,7 @@ body{
 	color: #fff;
 	margin-right: 10px;
 	font-size: 10pt;
+	height: 28px;
 }
 
 .menu nav ul li{
@@ -205,13 +219,13 @@ body{
 }
 /*Formatação do rodapé*/
 .rodape{
+	
 	color: rgba(202, 200, 200, 0.63);
 	/*margin-top:20%;*/
 	margin-bottom: 0px;
 	display: flex;
 	/*border:1px solid red;*/
 	width: 100%;
-	margin-top: 11%;
 
 
 	
@@ -262,7 +276,7 @@ body{
 /*butoes login*/
 .cont-buttons{
 	display: flex;
-	border:1px solid red;
+	justify-content: space-between;
 }
 .btn1{
 	border:1px solid green;
