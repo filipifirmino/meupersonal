@@ -49,10 +49,10 @@
 						</form>
 							<div class="cont-buttons">
 									
-						<a href="#" class="btn btn-primary" data-toggle="modal" data-target = "#modalReplace">Esqueceu a senha?</a>
+						<a href="#" class="btn btn-outline-primary" data-toggle="modal" data-target = "#modalReplace">Esqueceu a senha?</a>
 									
 										
-						<a href="#" class="btn btn-primary" data-toggle="modal" data-target = "#modalCadastro"> cadastre-se!</a>
+						<a href="#" class="btn btn-outline-primary" data-toggle="modal" data-target = "#modalCadastro"> cadastre-se!</a>
 										
 							</div>
 					</div>

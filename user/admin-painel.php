@@ -60,7 +60,9 @@
                 
         </div>  
         <div class="cont-right">
-
+            <div id="react-component">
+            
+            </div>
                 
 
 
@@ -81,6 +83,12 @@
 
 
 <!-- Optional JavaScript -->
+<!-- Inserção de react -->
+<!-- Nota: ao fazer o deploy, substitua "development.js" por "production.min.js". -->
+<script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+<script src="../asset/script/js/react-component.js"></script>
+
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="../asset/script/action.js"></script>
 <script src="../node_modules/chart.js/dist/Chart.js"></script>
