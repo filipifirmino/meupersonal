@@ -55,9 +55,7 @@
 						<a href="#" class="btn btn-outline-primary" data-toggle="modal" data-target = "#modalCadastro"> cadastre-se!</a>
 										
 							</div>
-					</div>
-
-								
+					</div>						
 						<div class="social-media">
 								<fieldset>
 							<legend for="social-media">Siga-nos!</legend>
@@ -75,15 +73,8 @@
 				</div>	
 
 			<!-- rodape dentro do container aqui-->
-
-
 	</div>
-
-				
-
 					<!-- Rodapé fora do container-->
-
-			
 			<div class="rodape">
 	
 				<div class="info-down">
@@ -100,16 +91,47 @@
 				<div class="info-down-right ">
 						
 								<p class="item-down"><a href="#">Trabalhe conosco</a></p>
-								<p class="item-down"><a href="#">Parceria</a></p>
-									
-						
+								<p class="item-down"><a href="#">Parceria</a></p>	
 				</div>
 		
 			</div>
         </div>
     </div>
-
-<!-- modal Replace-->
+<!--Modal para cadastro-->
+<div class="modal fade" id="modalCadastro" tabindex="-1" role="dialog" aria-labelledby="modalCadastro" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+		  <div class="modal-content">
+			<div class="modal-header">
+			  <h5 class="modal-title" id="modalCadastroLabel">Cadastro</h5>
+			  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+			  </button>
+			</div>
+	  
+			<div class="modal-body">
+			  <form action = "../asset/script/php/pdoInsert.php"  method= "POST">
+				  <div class="form-group">
+					  <input class="form-control" type="name" name="name-user" placeholder =  "Nome Completo" require/>
+				  </div>
+				  <div class="form-group">
+					  <input class="form-control" type="email" name="email-user" placeholder =  "e-mail" require/>
+				  </div>
+				  <div class="form-group">
+					  <input class="form-control" type="password" name="pass-user" placeholder =  "Senha" require/>
+				  </div>    
+					<div class="form-group">
+					  <input class="form-control" type="text" name="fone-user" placeholder =  "Ex: (99)-9 9999.9999" require/>
+				  </div>
+				  <button class = "btn btn-success" onclick = cadastrar() >Cadastrar</button>
+			  </form>
+			</div>
+			<div class="modal-footer">
+			  <button type="submit" class="btn btn-secondary" data-dismiss="modal">Close</button>
+			 </div>
+			</div>
+		</div>
+	</div>
+	<!-- modal Replace-->
 <div class="modal fade" id="modalReplace" tabindex="-1" role="dialog" aria-labelledby="modalReplace" aria-hidden="true">
 		<div class="modal-dialog" role="document">
 		  <div class="modal-content">
@@ -140,50 +162,7 @@
 		</div>
 	</div>
 
-
-
-
-
-
-
-	<!--Modal para cadastro-->
-	<div class="modal fade" id="modalCadastro" tabindex="-1" role="dialog" aria-labelledby="modalCadastro" aria-hidden="true">
-		<div class="modal-dialog" role="document">
-		  <div class="modal-content">
-			<div class="modal-header">
-			  <h5 class="modal-title" id="modalCadastroLabel">Cadastro</h5>
-			  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-				<span aria-hidden="true">&times;</span>
-			  </button>
-			</div>
-	  
-			<div class="modal-body">
-			  <form action = "../asset/script/pdoInsert.php"  method= "POST">
-				  <div class="form-group">
-					  <input class="form-control" type="name" name="name-user" placeholder =  "Nome Completo" require/>
-				  </div>
-				  <div class="form-group">
-					  <input class="form-control" type="email" name="email-user" placeholder =  "e-mail" require/>
-				  </div>
-				  <div class="form-group">
-					  <input class="form-control" type="password" name="pass-user" placeholder =  "Senha" require/>
-				  </div>    
-					<div class="form-group">
-					  <input class="form-control" type="text" name="fone-user" placeholder =  "Ex: (99)-9 9999.9999" require/>
-				  </div>
-				  <button class = "btn btn-success" onclick = cadastrar() >Cadastrar</button>
-			  </form>
-			</div>
-			<div class="modal-footer">
-			  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-			 
-			</div>
-		</div>
-	</div>
-
-	<!-- Scriptes in JS and Bootstrap -->
-
-
+	<!-- Scripts in JS and Bootstrap -->
 
 <script src="../asset/script/js/action.js"></script> <!--Script interno-->
 <!--Scripts do bootstrap-->
