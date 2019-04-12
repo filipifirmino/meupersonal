@@ -146,13 +146,11 @@
 			  <form action = "../asset/script/pdoUpdate.php"  method= "POST">
 				  
 				  <div class="form-group ">
-					  <input class="form-control" type="email" name="email-user" placeholder =  "e-mail" require/>
+					<label for="rec-senha">Insira seu email para recuperar a senha:</lebel>
+					  <input class="form-control" id="rec-senha"type="email" name="email-user" placeholder =  "e-mail" require/>
 				  </div>
-				  <div class="form-group ">
-					  <input class="form-control" type="password" name="pass-user" placeholder =  "Senha" require/>
-				  </div>    
 				  
-				  <button class = "btn btn-success" onclick = cadastrar() >Cadastrar</button>
+				  <button class = "btn btn-success" onclick = cadastrar()> Recuperar</button>
 			  </form>
 			</div>
 			<div class="modal-footer">

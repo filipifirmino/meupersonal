@@ -16,12 +16,14 @@ $dbpass = "dijital123";
             $score = 0;
 
 
+
         $sql = "INSERT INTO user SET nome = '$nome', email = '$email', fone = '$fone', senha ='$senha', score = '$score' ";
         /*Preparando a query de iserção de dados*/ 
         $sql = $pdo->query($sql);
         /*Inserção dos dados no banco*/
         $pdo->lastInsertId(); /*retorna o id do usuario*/
         
+        header('Location: http://localhost/meupersonal/login/login.php');
         
     } catch(PDOException $e){
         echo "Erro: " . $e->getMessage();
