@@ -1,4 +1,12 @@
-<!doctype html>
+<?php
+function score($contador){
+    for($i=1; $i<= $contador; $i++){
+        echo '<img src="../asset/image/padm/star.svg" class="star">';
+    }
+}
+?>
+
+<!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <!-- Required meta tags -->
@@ -64,7 +72,38 @@
             
             </div>
                 
-
+            <div class="dados">
+                
+                <table class="table">
+                
+                <tr>
+                <th>id</th>
+                <th>Nome</th>
+                <th>Email</th>
+                <th>Score</th>
+                <th>Ações</th>
+                </tr>             
+                
+                <?php
+                require '../asset/script/php/pdoDBConect.php';
+                  $sql = "SELECT * FROM user";
+                   $sql = $pdo->query($sql);
+                   if($sql->rowCount() > 0){
+                       foreach($sql->fetchAll() as $usuario){
+                           echo '<tr>';
+                           echo '<td>'.$usuario['id'].'</td>';
+                           echo '<td>'.$usuario['nome'].'</td>';
+                           echo '<td>'.$usuario['email'].'</td>';
+                           echo '<td>'.score($usuario['score']).'</td>';
+                           echo '<td> <a href="editar.php?id='.$usuario['id'].'">Editar</a> - <a href="excluir.php?id='.$usuario['id'].'">Excluir</a></td>';                         
+                           echo '</tr>';
+                       }
+                   }
+                ?>
+                </table>
+              </div>
+            
+            
 
 
 
@@ -90,7 +129,7 @@
 <script src="../asset/script/js/react-component.js"></script>
 
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="../asset/script/action.js"></script>
+<script src="../asset/script/js/action.js"></script>
 <script src="../node_modules/chart.js/dist/Chart.js"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>

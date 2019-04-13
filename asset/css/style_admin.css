@@ -112,3 +112,22 @@ body{
 .logout:hover{
 	background-color:rgba(255,255,255,0.5);
 }
+
+/*Conteudo right da página administrativa*/
+
+.table{
+	border:0px;
+	widows: 100%;	
+	
+}
+
+.dados {
+	margin-left: 10px;
+	margin-top: 20px; 
+}
+.star{
+	width: 15px;
+	height: 15px;
+	margin-left: 2px;
+	
+}
