@@ -1,11 +1,3 @@
-<?php
-function score($contador){
-    for($i=1; $i<= $contador; $i++){
-        echo '<img src="../asset/image/padm/star.svg" class="star">';
-    }
-}
-?>
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -35,7 +27,7 @@ function score($contador){
                 <div class="cont-usuario">
                     <span id="name-user" class="usuario">Usuario </span><!-- Nome do usuario ogado-->
                 </div>
-                <div class="item-menu">
+                <div class="item-menu active">
                     <div class="img-menu">
                         <img src="../asset/image/padm/alunos.svg" alt="icone">
                     </div>
@@ -85,6 +77,13 @@ function score($contador){
                 </tr>             
                 
                 <?php
+
+                    function score($contador){
+                        for($i=1; $i<= $contador; $i++){
+                            echo '<img src="../asset/image/padm/star.svg" class="star">';
+                        }
+                    }
+
                 require '../asset/script/php/pdoDBConect.php';
                   $sql = "SELECT * FROM user";
                    $sql = $pdo->query($sql);
@@ -101,10 +100,43 @@ function score($contador){
                    }
                 ?>
                 </table>
+                <button class="btn btn-success" data-toggle="modal" data-target = "#modalCadastro"> Novo </button>
               </div>
             
-            
-
+            <!-- Modal cadastro-->
+            <div class="modal fade" id="modalCadastro" tabindex="-1" role="dialog" aria-labelledby="modalCadastro" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+		  <div class="modal-content">
+			<div class="modal-header">
+			  <h5 class="modal-title" id="modalCadastroLabel">Cadastro</h5>
+			  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+			  </button>
+			</div>
+	  
+			<div class="modal-body">
+			  <form action = "../asset/script/php/pdoInsert.php"  method= "POST">
+				  <div class="form-group">
+					  <input class="form-control" type="name" name="name-user" placeholder =  "Nome Completo" require/>
+				  </div>
+				  <div class="form-group">
+					  <input class="form-control" type="email" name="email-user" placeholder =  "e-mail" require/>
+				  </div>
+				  <div class="form-group">
+					  <input class="form-control" type="password" name="pass-user" placeholder =  "Senha" require/>
+				  </div>    
+					<div class="form-group">
+					  <input class="form-control" type="text" name="fone-user" placeholder =  "Ex: (99)-9 9999.9999" require/>
+				  </div>
+				  <button class = "btn btn-success" onclick = cadastrar() >Cadastrar</button>
+			  </form>
+			</div>
+			<div class="modal-footer">
+			  <button type="submit" class="btn btn-secondary" data-dismiss="modal">Close</button>
+			 </div>
+			</div>
+		</div>
+	</div>  
 
 
 

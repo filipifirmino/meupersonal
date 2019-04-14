@@ -114,7 +114,9 @@ body{
 }
 
 /*Conteudo right da página administrativa*/
-
+.active{
+	border-right: 4px solid rgb(9,182,250);
+}
 .table{
 	border:0px;
 	widows: 100%;	
