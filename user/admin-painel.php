@@ -85,7 +85,7 @@
                     }
 
                 require '../asset/script/php/pdoDBConect.php';
-                  $sql = "SELECT * FROM user";
+                  $sql = "SELECT * FROM user WHERE tipo = 2";
                    $sql = $pdo->query($sql);
                    if($sql->rowCount() > 0){
                        foreach($sql->fetchAll() as $usuario){
@@ -124,7 +124,13 @@
 				  </div>
 				  <div class="form-group">
 					  <input class="form-control" type="password" name="pass-user" placeholder =  "Senha" require/>
-				  </div>    
+				  </div>
+                  <div class="form-group">
+					  <select class="form-control" name="type-user">
+                        <option value="2">Aluno</option>
+                        <option class="list-group-item disabled" value="1">Professor</option>
+                      </select>
+				  </div>     
 					<div class="form-group">
 					  <input class="form-control" type="text" name="fone-user" placeholder =  "Ex: (99)-9 9999.9999" require/>
 				  </div>

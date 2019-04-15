@@ -14,10 +14,11 @@ $dbpass = "dijital123";
             $senha = md5($_POST['pass-user']);
             $fone = $_POST['fone-user'];
             $score = 0;
+            $typeUser = $_POST['type-user'];
 
 
 
-        $sql = "INSERT INTO user SET nome = '$nome', email = '$email', fone = '$fone', senha ='$senha', score = '$score' ";
+        $sql = "INSERT INTO user SET nome = '$nome', email = '$email', fone = '$fone', senha ='$senha', score = '$score', tipo = '$typeUser' ";
         /*Preparando a query de iserção de dados*/ 
         $sql = $pdo->query($sql);
         /*Inserção dos dados no banco*/
