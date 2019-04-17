@@ -2,6 +2,7 @@
 <head>
 	<!--Area de meta tagas-->
 	<meta charset="UTF-8">
+	<link rel="shortcut icon" type="image/x-icon" href="../asset/image/favico.svg">
 	<meta name="viewport" content="width=device-width, initial-scale=0, shrink-to-fit=no">
 	<meta name="authot" content="Ic3Web - CEO - Filipi Firmino">
     <meta name="description" content="Sistema de gerenciamento voltado para desenvolvimento pessoa">

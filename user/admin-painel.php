@@ -2,6 +2,7 @@
 <html lang="pt-br">
 <head>
     <!-- Required meta tags -->
+    <link rel="shortcut icon" type="image/x-icon" href="../asset/image/favico.svg">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="authot" content="Ic3Web - CEO - Filipi Firmino">
