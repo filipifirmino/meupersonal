@@ -134,3 +134,14 @@ body{
 	margin-left: 2px;
 	
 }
+
+/*Style da tag*/
+.turmas{
+	margin-top:10px;
+	margin-left: 10px;
+}
+
+.title{
+	color:#fff;
+	text-align: center;
+}
