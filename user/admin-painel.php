@@ -98,7 +98,7 @@
                            echo '<td>'.$usuario['nome'].'</td>';
                            echo '<td>'.$usuario['email'].'</td>';
                            echo '<td>'.score($usuario['score']).'</td>';
-                           echo '<td> <a href="editar.php?id='.$usuario['id'].'">Editar</a> - <a href="excluir.php?id='.$usuario['id'].'">Excluir</a></td>';                         
+                           echo '<td> <a href="editar.php?id='.$usuario['id'].'"><button class="btn btn-warning">Editar</button></a> - <a href="excluir.php?id='.$usuario['id'].'"><button class="btn btn-danger">Excluir</button></a></td>';                         
                            echo '</tr>';
                        }
                    }
@@ -112,6 +112,7 @@
                 <table class="table">
 
                         <tr>
+                            <th>Id</th>
                             <th>Turma</th>
                             <th>Horario</th>
                             <th>Alunos</th>
@@ -134,10 +135,11 @@
                             foreach($sql1->fetchAll() as $turmas){
                                 echo '<tr>';
                                 echo '<td>'.$turmas['id'].'</td>';
+                                echo '<td>'.$turmas['nome'].'</td>';
                                 echo '<td>'.$turmas['horario'].'</td>';
                                 echo '<td>'.$turmas['qtdAlunos'].'</td>';
                                 echo '<td>'.validaTurma($turmas['estatus']).'</td>';
-                                echo '<td> <a href="editarTurmas.php?id="'.$turmas['id'].'">Editar</a> - <a href="excluirTurmas.php?id="'.$turmas['id'].'">Excluir</a></td>';
+                                echo '<td> <a href="editarTurmas.php?id="'.$turmas['id'].'"><button class="btn btn-warning">Editar</button></a> - <a href="excluirTurmas.php?id="'.$turmas['id'].'"><button class="btn btn-danger">Excluir</button></a></td>';
 
                             }
                         }
@@ -230,7 +232,8 @@
 			</div>
 		</div>
 	</div>  
-
+<!--Modal edição de usuario-->
+<!-- Modal edição de turma-->
 
 
 

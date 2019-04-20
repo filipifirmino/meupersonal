@@ -1,0 +1,7 @@
+<?
+    echo "Editar Aluno";
+
+
+
+
+?>
