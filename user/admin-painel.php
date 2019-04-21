@@ -26,7 +26,12 @@
                 <img src="../asset/image/padm/user.svg" alt="User-login"/>
             </div>
                 <div class="cont-usuario">
-                    <span id="name-user" class="usuario">Usuario </span><!-- Nome do usuario ogado-->
+                    <span id="name-user" class="usuario">
+                     <?php
+                        echo "Usuario";
+
+                    ?>   
+                     </span><!-- Nome do usuario ogado-->
                 </div>
                 <div class="item-menu active">
                     <div class="img-menu">
@@ -98,7 +103,8 @@
                            echo '<td>'.$usuario['nome'].'</td>';
                            echo '<td>'.$usuario['email'].'</td>';
                            echo '<td>'.score($usuario['score']).'</td>';
-                           echo '<td> <a href="editar.php?id='.$usuario['id'].'"><button class="btn btn-warning">Editar</button></a> - <a href="excluir.php?id='.$usuario['id'].'"><button class="btn btn-danger">Excluir</button></a></td>';                         
+                           echo '<td> <a href="editar.php?id='.$usuario['id'].'"><button class="btn btn-warning" data-toggle="modal" data-target="#modalEditar">Editar</button></a> - 
+                                    <a href="excluir.php?id='.$usuario['id'].'"><button class="btn btn-danger">Excluir</button></a></td>';                         
                            echo '</tr>';
                        }
                    }
@@ -233,8 +239,57 @@
 		</div>
 	</div>  
 <!--Modal edição de usuario-->
-<!-- Modal edição de turma-->
+<div class="modal fade" id="modalEditar" tabindex="-1" role="dialog" aria-labelledby="modalEditar" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+		  <div class="modal-content">
+			<div class="modal-header">
+			  <h5 class="modal-title" id="modalEditarLabel">Cadastro</h5>
+			  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+			  </button>
+			</div>
+	  
+			<div class="modal-body">
+            <?php
+            require '../asset/script/php/pdoDBConect.php';
+            $id = 0;
+            if(isset($_GET['id']) && empty($_GET['id'])== false){
+            $id = addslashes($_GET['id']);
+            $sql = "SELECT*FROM user WHERE id = '$id'";
 
+            $sql = $pdo->query($sql);
+                if($sql->rowCount() > 0){
+                    $dado = $sql->fetch();//Seleciona apenas o primeiro resultado do banco de dados
+                }else{
+                    header("Location: admin-painel.php");
+                }
+
+
+            }else{
+                header("Location: admin-painel.php");
+            }
+            ?>
+            <form action = "../asset/script/php/pdoInsert.php"  method= "POST">
+
+                    <div class="form-group">
+                        <input class="form-control" type="name" name="name-user" value="<?php echo $dado['nome'] ?>"require/>
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control" type="email" name="email-user" value="<?php echo  $dado['email'] ?>" require/>
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control" type="text" name="fone-user" value="<?php echo $dado['fone'] ?>" require/>
+                    </div>
+                    <button class = "btn btn-success" onclick = cadastrar() >Atualizar</button>
+                </form>
+
+			</div>
+			<div class="modal-footer">
+			  <button type="submit" class="btn btn-secondary" data-dismiss="modal">Close</button>
+			 </div>
+			</div>
+		</div>
+	</div>  
 
 
         </div>
