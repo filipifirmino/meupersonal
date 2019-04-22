@@ -1,10 +1,11 @@
 <?
     require '../asset/script/php/pdoDBConect.php';
+    #Requisitando conexao com banco de dados
     $id = 0;
-
+    #setando ID inicial do usuario
     if(isset($_GET['id']) && empty($_GET['id'])== false){
         $id = addslashes($_GET['id']);
-
+    #Verificando se o sistema passou a id a ser editada e armazenando a mesma em uma variavel
 
 
     if(isset($_POST['nome']) && empty($_POST['nome']) == false){
@@ -22,7 +23,8 @@
     $sql = "SELECT*FROM user WHERE id = '$id'";
 
     $sql = $pdo->query($sql);
-        if($sql->rowCount() > 0){
+       
+    if($sql->rowCount() > 0){
             $dado = $sql->fetch();//Seleciona apenas o primeiro resultado do banco de dados
         }else{
             header("Location: admin-painel.php");
@@ -33,7 +35,7 @@
     header("Location: admin-painel.php");
 }
 ?>
- <form action = "../asset/script/php/pdoInsert.php"  method= "POST">
+ <form method= "POST">
 
         <div class="form-group">
             <input class="form-control" type="name" name="name-user" value="<?php echo $dado['nome'] ?>"require/>

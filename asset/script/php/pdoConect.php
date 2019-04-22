@@ -16,7 +16,7 @@
 
                 $_SESSION['id'] = $dado['id'];
                 header ("Location:../user/admin-painel.php");
-            
+            }
 
         } catch(PDOException $e){
             echo "Erro: ". $e-> getMessage();

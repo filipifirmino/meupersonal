@@ -80,6 +80,7 @@
                 <th>id</th>
                 <th>Nome</th>
                 <th>Email</th>
+                <th>Fone</th>
                 <th>Score</th>
                 <th>Ações</th>
                 </tr>             
@@ -102,9 +103,10 @@
                            echo '<td>'.$usuario['id'].'</td>';
                            echo '<td>'.$usuario['nome'].'</td>';
                            echo '<td>'.$usuario['email'].'</td>';
+                           echo '<td>'.$usuario['fone'].'</td>';
                            echo '<td>'.score($usuario['score']).'</td>';
-                           echo '<td> <a href="editar.php?id='.$usuario['id'].'"><button class="btn btn-warning" data-toggle="modal" data-target="#modalEditar">Editar</button></a> - 
-                                    <a href="excluir.php?id='.$usuario['id'].'"><button class="btn btn-danger">Excluir</button></a></td>';                         
+                           echo '<td> <a href="editar.php?id='.$usuario['id'].'"><button class="btn btn-warning">Editar</button></a> - 
+                                    <a href="excluir.php?id='.$usuario['id'].'"><button class="btn btn-danger">Excluir</button></a></td>';    #data-toggle="modal" data-target="#modalEditar                     
                            echo '</tr>';
                        }
                    }
