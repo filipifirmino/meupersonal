@@ -5,21 +5,15 @@ Sistema de gerenciamento e acompanhamento, voltado para profissionais que
 necessitam um feedbeck em tempo real de desempenho seja de um aluno  de um atleta.
 
 ## Funcionalidades
-
-
-
-
-## Caso de uso
-
-
-
-
+- Cadastro de aluno;
+- Cadastro de Treino;
+- Acompanhamento de exercicios;
+- Adcionar link;
+- Adcionar vídeo;
 
 ## Documentação
-
-
-
-
+Arquitetura: MVC;
+Tecnologias: PHP, JS, HTML, CSS;
 
 ## Banco de dados
 Base de dados: personal
