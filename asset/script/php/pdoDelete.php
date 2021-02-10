@@ -1,7 +1,7 @@
 <?php
     $dsn = "mysql:dbname=meupersonal; host= localhost";
     $dbuser = "root";
-    $dbpass = "dijital123";
+    $dbpass = "";
 
     $id = $_POST['id-user'];
 
