@@ -2,7 +2,7 @@
     
     $dsn = "mysql:dbname=meupersonal; host=localhost";
     $dbuser = "root";
-    $dbpass = "dijital123";
+    $dbpass = "";
 
         try{
 
